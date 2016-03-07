@@ -1,31 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZoA-Bp-Qp9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Second-->
+        <scene sceneID="Pcd-GF-GJM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OtogramApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Second" id="der-ZO-n6T" customClass="SecondViewController" customModule="OtogramApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AcT-GX-pxg"/>
-                        <viewControllerLayoutGuide type="bottom" id="eh2-bx-Uff"/>
+                        <viewControllerLayoutGuide type="top" id="hNQ-Hr-1Sh"/>
+                        <viewControllerLayoutGuide type="bottom" id="KSj-LX-OT5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6fH-cl-d2W" customClass="EZAudioPlotGL">
+                    <view key="view" contentMode="scaleToFill" id="wlb-aK-HUZ" customClass="EZAudioPlot">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-a7-WgQ" customClass="EZAudioPlot">
+                                <rect key="frame" x="18" y="18" width="282" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFR-9M-jf8">
+                                <rect key="frame" x="18" y="100" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KSj-LX-OT5" firstAttribute="top" secondItem="DLw-a7-WgQ" secondAttribute="bottom" constant="437" id="8EC-tT-7bO"/>
+                            <constraint firstItem="DLw-a7-WgQ" firstAttribute="leading" secondItem="tFR-9M-jf8" secondAttribute="leading" id="QfA-tl-57u"/>
+                            <constraint firstAttribute="trailing" secondItem="DLw-a7-WgQ" secondAttribute="trailing" constant="20" symbolic="YES" id="Sb3-7z-h8D"/>
+                            <constraint firstItem="DLw-a7-WgQ" firstAttribute="top" secondItem="wlb-aK-HUZ" secondAttribute="topMargin" constant="18" id="T9q-yA-fVm"/>
+                            <constraint firstItem="DLw-a7-WgQ" firstAttribute="leading" secondItem="wlb-aK-HUZ" secondAttribute="leadingMargin" constant="2" id="UrD-yx-fxz"/>
+                            <constraint firstItem="tFR-9M-jf8" firstAttribute="top" secondItem="wlb-aK-HUZ" secondAttribute="top" constant="100" id="aeP-Ue-EfJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" red="0.0078431372550000003" green="0.72156862749999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Second" id="E4w-We-JT3"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8J4-0Y-q9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="10"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="nYp-sa-gLN">
+            <objects>
+                <viewController title="Third" id="isO-L9-ixN" customClass="ThirdViewController" customModule="OtogramApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jF0-1s-5KZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ze6-6z-kDG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qg6-v5-B76">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" id="zJS-wx-58G"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTP-7W-gek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800" y="-301"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="zH3-f0-wc0">
+            <objects>
+                <viewController title="First" id="yGU-id-O2c" customClass="FirstViewController" customModule="OtogramApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Df-gz-sTi"/>
+                        <viewControllerLayoutGuide type="bottom" id="JfW-Ff-3qd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qCD-nm-Vnh" customClass="EZAudioPlotGL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" id="yec-gY-7Kq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="plot" destination="6fH-cl-d2W" id="fuS-pE-Bnb"/>
+                        <outlet property="plot" destination="qCD-nm-Vnh" id="z4D-YI-zrb"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMj-Hk-J7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="230" y="288"/>
+            <point key="canvasLocation" x="280" y="-647"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="G5j-8F-zBf">
+            <objects>
+                <tabBarController id="ZoA-Bp-Qp9" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Q9P-zm-O3x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yGU-id-O2c" kind="relationship" relationship="viewControllers" id="lVN-I6-vQn"/>
+                        <segue destination="der-ZO-n6T" kind="relationship" relationship="viewControllers" id="MrT-CB-gEF"/>
+                        <segue destination="isO-L9-ixN" kind="relationship" relationship="viewControllers" id="32N-GH-BGL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfQ-hL-VmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="-334"/>
         </scene>
     </scenes>
 </document>

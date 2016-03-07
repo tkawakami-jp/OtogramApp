@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25F652BE1C8D024400592BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F652BD1C8D024400592BB2 /* AppDelegate.swift */; };
-		25F652C01C8D024400592BB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F652BF1C8D024400592BB2 /* ViewController.swift */; };
 		25F652C31C8D024400592BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F652C11C8D024400592BB2 /* Main.storyboard */; };
 		25F652C51C8D024400592BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F652C41C8D024400592BB2 /* Assets.xcassets */; };
 		25F652C81C8D024400592BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F652C61C8D024400592BB2 /* LaunchScreen.storyboard */; };
@@ -18,9 +16,11 @@
 
 /* Begin PBXFileReference section */
 		259B3C7E1C8DC941009A5B7F /* OtogramApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OtogramApp-Bridging-Header.h"; path = "OtogramApp/OtogramApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		259B3CA61C8DEEE3009A5B7F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		259B3CA81C8DEEFA009A5B7F /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		25F652BA1C8D024400592BB2 /* OtogramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtogramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F652BD1C8D024400592BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25F652BF1C8D024400592BB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25F652BF1C8D024400592BB2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		25F652C21C8D024400592BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25F652C41C8D024400592BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F652C71C8D024400592BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +67,9 @@
 			children = (
 				259B3C7E1C8DC941009A5B7F /* OtogramApp-Bridging-Header.h */,
 				25F652BD1C8D024400592BB2 /* AppDelegate.swift */,
-				25F652BF1C8D024400592BB2 /* ViewController.swift */,
+				25F652BF1C8D024400592BB2 /* FirstViewController.swift */,
+				259B3CA61C8DEEE3009A5B7F /* SecondViewController.swift */,
+				259B3CA81C8DEEFA009A5B7F /* ThirdViewController.swift */,
 				25F652C11C8D024400592BB2 /* Main.storyboard */,
 				25F652C41C8D024400592BB2 /* Assets.xcassets */,
 				25F652C61C8D024400592BB2 /* LaunchScreen.storyboard */,
@@ -217,8 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F652C01C8D024400592BB2 /* ViewController.swift in Sources */,
-				25F652BE1C8D024400592BB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

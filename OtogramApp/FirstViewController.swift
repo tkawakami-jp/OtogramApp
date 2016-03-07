@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, EZMicrophoneDelegate {
+class FirstViewController: UIViewController, EZMicrophoneDelegate {
     
     //------------------------------------------------------------------------------
     // MARK: Properties
