@@ -8,18 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController, EZMicrophoneDelegate {
+    
+    //------------------------------------------------------------------------------
+    // MARK: Properties
+    //------------------------------------------------------------------------------
+    
+    @IBOutlet weak var plot: EZAudioPlotGL?;
+    var microphone: EZMicrophone!;
+    
+    //------------------------------------------------------------------------------
+    // MARK: Status Bar Style
+    //------------------------------------------------------------------------------
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent;
+    }
+    
+    //------------------------------------------------------------------------------
+    // MARK: View Lifecycle
+    //------------------------------------------------------------------------------
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        microphone = EZMicrophone(delegate: self, startsImmediately: true);
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    //------------------------------------------------------------------------------
+    // MARK: EZMicrophoneDelegate
+    //------------------------------------------------------------------------------
+    
+    func microphone(microphone: EZMicrophone!, hasAudioReceived buffer: UnsafeMutablePointer<UnsafeMutablePointer<Float>>, withBufferSize bufferSize: UInt32, withNumberOfChannels numberOfChannels: UInt32) {
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.plot?.updateBuffer(buffer[0], withBufferSize: bufferSize);
+        });
     }
-
-
+    
 }
 

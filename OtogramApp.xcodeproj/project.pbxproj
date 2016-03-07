@@ -12,9 +12,12 @@
 		25F652C31C8D024400592BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F652C11C8D024400592BB2 /* Main.storyboard */; };
 		25F652C51C8D024400592BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F652C41C8D024400592BB2 /* Assets.xcassets */; };
 		25F652C81C8D024400592BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F652C61C8D024400592BB2 /* LaunchScreen.storyboard */; };
+		75214165B6308B9779812956 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A2849C137361617D76E877 /* libPods.a */; };
+		D3455FD0FB959F0551B6FA2E /* libPods-OtogramApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB140DBF1814DA52AE60480 /* libPods-OtogramApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259B3C7E1C8DC941009A5B7F /* OtogramApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "OtogramApp-Bridging-Header.h"; path = "OtogramApp/OtogramApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		25F652BA1C8D024400592BB2 /* OtogramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtogramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F652BD1C8D024400592BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F652BF1C8D024400592BB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,10 @@
 		25F652C41C8D024400592BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25F652C71C8D024400592BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25F652C91C8D024400592BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A2849C137361617D76E877 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8353DFF5E5ACF93D483F5913 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8468A827465E42F73C53C7F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AAB140DBF1814DA52AE60480 /* libPods-OtogramApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OtogramApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3455FD0FB959F0551B6FA2E /* libPods-OtogramApp.a in Frameworks */,
+				75214165B6308B9779812956 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				25F652BC1C8D024400592BB2 /* OtogramApp */,
 				25F652BB1C8D024400592BB2 /* Products */,
+				CC9AAF6E72EA5D3B041315CD /* Pods */,
+				A33DF0C5C88824E3E490A8F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,7 @@
 		25F652BC1C8D024400592BB2 /* OtogramApp */ = {
 			isa = PBXGroup;
 			children = (
+				259B3C7E1C8DC941009A5B7F /* OtogramApp-Bridging-Header.h */,
 				25F652BD1C8D024400592BB2 /* AppDelegate.swift */,
 				25F652BF1C8D024400592BB2 /* ViewController.swift */,
 				25F652C11C8D024400592BB2 /* Main.storyboard */,
@@ -64,6 +76,24 @@
 			path = OtogramApp;
 			sourceTree = "<group>";
 		};
+		A33DF0C5C88824E3E490A8F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAB140DBF1814DA52AE60480 /* libPods-OtogramApp.a */,
+				41A2849C137361617D76E877 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC9AAF6E72EA5D3B041315CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8353DFF5E5ACF93D483F5913 /* Pods.debug.xcconfig */,
+				8468A827465E42F73C53C7F4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25F652CC1C8D024400592BB2 /* Build configuration list for PBXNativeTarget "OtogramApp" */;
 			buildPhases = (
+				B4F32DB2D9E636A0A15385F3 /* Check Pods Manifest.lock */,
 				25F652B61C8D024400592BB2 /* Sources */,
 				25F652B71C8D024400592BB2 /* Frameworks */,
 				25F652B81C8D024400592BB2 /* Resources */,
+				5E5F0A4AF42AE29C123DAC91 /* Embed Pods Frameworks */,
+				2B72EC98D720D9004A333F62 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B72EC98D720D9004A333F62 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5F0A4AF42AE29C123DAC91 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F32DB2D9E636A0A15385F3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25F652B61C8D024400592BB2 /* Sources */ = {
@@ -246,23 +327,27 @@
 		};
 		25F652CD1C8D024400592BB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8353DFF5E5ACF93D483F5913 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OtogramApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.takahiro.kawakami.OtogramApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)//$(PROJECT)/OtogramApp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		25F652CE1C8D024400592BB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8468A827465E42F73C53C7F4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OtogramApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.takahiro.kawakami.OtogramApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)//$(PROJECT)/OtogramApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -285,6 +370,7 @@
 				25F652CE1C8D024400592BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
